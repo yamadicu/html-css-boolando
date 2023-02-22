@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* UTILITY */
+.flex{
+    display: flex;
+}
+.strike{
+    text-decoration: line-through;
+    font-size: 15px;
+    padding-left: 2%;
+}
 
 /* HEADER */
 
@@ -12,7 +21,6 @@ header{
 }
 
 nav{
-    display: flex;
     justify-content: space-between;
     padding-inline: 20%;
     padding-top: 10px;
@@ -31,4 +39,75 @@ li{
 .icon{
     height: 25px;
     width: 25px;
+}
+
+/* MAIN */
+
+main{
+    padding-top: 2%;
+}
+.scheda{
+    position: relative;
+    max-width: 250px;
+}
+main{
+    justify-content: space-around;
+    padding-inline: 20%;
+}
+
+.model{
+    max-width: 250px;
+    top: 0;
+    left: 0;
+}
+
+.retro{
+    /* position */
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* trick per la scheda */
+.scheda:hover .retro{
+    z-index: 2;
+}
+
+.cuore{
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.sconto{
+    background-color: red;
+    position: absolute;
+    bottom: 30px;
+    z-index: 3;
+}
+
+.eco{
+    position: absolute;
+    background-color: green;
+    bottom: 30px;
+    left: 40px;
+    z-index: 3;
+}
+
+.prodotto{
+    position: relative;
+    padding-inline: 5%;
+}
+
+.marca{
+    font-size: 15px;
+}
+.prezzo{
+    font-size: 15px;
+    color: red;
 }
