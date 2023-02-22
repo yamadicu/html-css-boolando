@@ -3,10 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    background-color: rgb(221, 149, 16);
+    height: 50px;
+}
+
 /* UTILITY */
+
 .flex{
     display: flex;
 }
+
 .strike{
     text-decoration: line-through;
     font-size: 15px;
@@ -15,14 +23,11 @@
 
 /* HEADER */
 
-header{
-    background-color: orange;
-    height: 50px;
-}
+
 
 nav{
     justify-content: space-between;
-    padding-inline: 20%;
+    padding-inline: 23%;
     padding-top: 10px;
 }
 
@@ -33,7 +38,7 @@ li{
 }
 
 .logo{
-    width: 10%;
+    width: 15%;
 }
 
 .icon{
@@ -45,14 +50,14 @@ li{
 
 main{
     padding-top: 2%;
+    justify-content: space-between;
+    padding-left: 18%;
+    padding-bottom: 2%;
 }
+
 .scheda{
     position: relative;
     max-width: 250px;
-}
-main{
-    justify-content: space-around;
-    padding-inline: 20%;
 }
 
 .model{
@@ -62,7 +67,6 @@ main{
 }
 
 .retro{
-    /* position */
     position:absolute;
     top: 0;
     left: 0;
@@ -85,6 +89,7 @@ main{
 }
 
 .sconto{
+    color: white;
     background-color: red;
     position: absolute;
     bottom: 30px;
@@ -92,10 +97,19 @@ main{
 }
 
 .eco{
+    color: white;
     position: absolute;
     background-color: green;
     bottom: 30px;
     left: 40px;
+    z-index: 3;
+}
+
+.eco-spec{
+    color: white;
+    position: absolute;
+    background-color: green;
+    bottom: 30px;
     z-index: 3;
 }
 
@@ -107,7 +121,29 @@ main{
 .marca{
     font-size: 15px;
 }
+
 .prezzo{
     font-size: 15px;
     color: red;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(59, 58, 58);
+    margin-bottom: 0;
+    padding-top: 1%;
+}
+.fa-brands{
+    padding-top: 10%;
+    padding-right: 4%;
+}
+.white{
+    color: white;
+}
+.container{
+    justify-content: space-between;
+    padding-inline: 23%;
+    padding-bottom: 1%;
 }
